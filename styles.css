@@ -15,6 +15,7 @@ a {
 
 .container {
     display: flex;
+    flex-direction: row; /* Mantener la fila en pantallas grandes */
     height: 100vh;
     overflow: hidden;
 }
@@ -29,9 +30,10 @@ a {
     align-items: center;
 }
 
+
 .sidebar h1 {
     font-size: 2.5rem;
-    color: #64ffda;
+    color: #6C99B2;
 }
 
 .sidebar p {
@@ -51,10 +53,10 @@ a {
 
 .nav ul li a {
     text-decoration: none;
-    color: #64ffda;
+    color: #6C99B2;
     font-size: 1.2rem;
     padding: 10px;
-    border: 2px solid #64ffda;
+    border: 2px solid #6C99B2;
     border-radius: 5px;
     display: block;
     text-align: center;
@@ -62,7 +64,7 @@ a {
 }
 
 .nav ul li a:hover {
-    background-color: #64ffda;
+    background-color: #6C99B2;
     color: #0a192f;
 }
 
@@ -73,12 +75,27 @@ a {
     background-color: #112240;
 }
 
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        height: auto; /* Ajustar altura automática */
+    }
+    .sidebar {
+        width: 100%; /* Ancho completo para la sidebar */
+        padding: 10px;
+    }
+    .main-content {
+        width: 100%; /* Ancho completo para el contenido principal */
+        padding: 20px;
+    }
+}
+
 .section {
     margin-bottom: 50px;
 }
 
 .section h2 {
-    color: #64ffda;
+    color: #6C99B2;
     font-size: 2rem;
     margin-bottom: 20px;
 }
@@ -92,7 +109,7 @@ a {
 }
 
 .card h3 {
-    color: #64ffda;
+    color: #6C99B2;
 }
 
 .card p {
