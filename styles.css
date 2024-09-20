@@ -1,0 +1,105 @@
+/* Estilos generales */
+body {
+    font-family: 'Fira Code', menlo;
+    margin: 0;
+    padding: 0;
+    background-color: #0a192f; /* Fondo azul oscuro */
+    color: #ccd6f6; /* Texto claro */
+    scroll-behavior: smooth;
+}
+
+a {
+    color: white; /* Cambia el color del texto a blanco */
+     /* Elimina la subrayado predeterminado de los enlaces */
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #0a192f; /* Fondo igual al general */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar h1 {
+    font-size: 2.5rem;
+    color: #64ffda;
+}
+
+.sidebar p {
+    font-size: 1.5rem;
+    color: #8892b0;
+    margin-bottom: 2rem;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav ul li {
+    margin: 1rem 0;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #64ffda;
+    font-size: 1.2rem;
+    padding: 10px;
+    border: 2px solid #64ffda;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.nav ul li a:hover {
+    background-color: #64ffda;
+    color: #0a192f;
+}
+
+.main-content {
+    width: 80%;
+    padding: 50px;
+    overflow-y: auto;
+    background-color: #112240;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section h2 {
+    color: #64ffda;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #0a192f;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+    color: #64ffda;
+}
+
+.card p {
+    color: #8892b0;
+}
+
+/* Efecto Scroll */
+html {
+    scroll-behavior: smooth;
+}
